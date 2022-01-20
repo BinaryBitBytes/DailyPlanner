@@ -1,0 +1,119 @@
+* {
+    /*min-width: 200px;
+    max-width: 1441px;
+    /*flex-wrap: wrap;*/
+    background-color: darksalmon;
+    border-width: 5px;
+    border-color: darkturquoise;
+    border-style: dotted;
+    color:green;
+    justify-content: center;
+    align-items: stretch;
+}
+
+h1{
+    border-color:darkblue;
+    color:indigo;
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    border-color:red;
+    color:cornflowerblue;
+    text-align: center;
+}
+
+li{
+    border-style: solid;
+    padding:4px;
+    margin:4px;
+    border-color: rgb(28, 170, 87);
+    border-width: 2px;
+}
+
+a{
+    border-color:gold;
+    font-style: italic;
+    color:seashell;
+    background-color: slategrey;
+}
+body {
+    box-sizing: content-box;
+    padding: 2.2cm;
+    margin: 90px;
+    justify-items: flex-start;
+    background-color: dimgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: purple;
+    border-width: 10px;
+    border-style: double;
+    border-color: lawngreen;
+    align-items: center;
+    
+}
+
+tbody{
+    box-sizing: content-box;
+    display: flexbox;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+td{
+    border-color: black;
+    border-radius: 15%;
+    border-style: groove;
+    box-shadow: greenyellow, 2xp ;
+    padding: 2.2cm;
+    margin: 90px;
+    color:red;
+}
+
+tr{
+    display:flex;
+    padding: 0.2cm;
+    margin: 40px;
+    color:goldenrod;
+}
+table {
+    display:inline-table;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0.5%;
+    margin: 5px;
+    border-width: 5px;
+    border-color: maroon;
+}
+aside {
+    box-sizing:content-box;
+    display:inline-table;
+    border-color: sienna;
+    border-radius: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+}
+
+div#side{
+        align-content:center;
+        box-sizing: content-box;
+        background-color:black;
+}
+
+#current{
+    color:yellow;
+}
+
+#passedDue{
+    color: crimson;
+}
+
+#completed{
+    color:lime;
+}
+
+@media screen {
+
+}
