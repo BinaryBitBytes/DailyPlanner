@@ -73,6 +73,7 @@ td{
 }
 
 tr{
+    justify-content: center;
     display:flex;
     padding: 0.2cm;
     margin: 40px;
@@ -88,6 +89,8 @@ table {
     border-color: maroon;
 }
 aside {
+    align-content: center;
+    justify-content: center;
     box-sizing:content-box;
     display:inline-table;
     border-color: sienna;
@@ -96,9 +99,24 @@ aside {
     font-variant: small-caps;
 }
 
+form{
+    border: teal, 5px;
+    margin: 3px;
+    padding: :3px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
 div#side{
+        align-content: center;
+        justify-content: center;
+        box-sizing:content-box;
+        display:inline-table;
+        //flex-wrap:wrap;
         align-content:center;
-        box-sizing: content-box;
         background-color:black;
 }
 
