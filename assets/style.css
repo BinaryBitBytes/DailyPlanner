@@ -8,7 +8,25 @@
     border-style: dotted;
     color:green;
     justify-content: center;
-    align-items: stretch;
+    align-items:center;
+}
+
+a {
+    padding: 5px;
+    margin: 13px;
+}
+
+h2 , p, li {
+    text-align: center;
+
+}
+
+main{
+    border-style: outset;
+    border-width: 3%;
+    border-color: tomato;
+    border-spacing: 4px;
+    padding:5px;
 }
 
 h1{
@@ -56,8 +74,9 @@ body {
 
 tbody{
     box-sizing: content-box;
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
     
 }
@@ -80,19 +99,20 @@ tr{
     color:goldenrod;
 }
 table {
-    display:inline-table;
+    display:flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: space-around;
     padding: 0.5%;
     margin: 5px;
     border-width: 5px;
     border-color: maroon;
 }
 aside {
+    flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content:stretch;
     box-sizing:content-box;
-    display:inline-table;
+    display:flex;
     border-color: sienna;
     border-radius: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -100,7 +120,9 @@ aside {
 }
 
 form{
-    border: teal, 5px;
+    border-color: slateblue;
+    border-radius: 20%;
+    border-spacing: 25%;
     margin: 3px;
     padding: :3px;
     text-align: center;
@@ -110,14 +132,27 @@ form{
     justify-content: center;
 }
 
+input#createTask{
+    text-align: center;
+    border-color:black;
+    border-radius: 15%;
+    border-style: groove;
+    border-collapse: collapse;
+}
+
 div#side{
-        align-content: center;
-        justify-content: center;
-        box-sizing:content-box;
-        display:inline-table;
-        //flex-wrap:wrap;
-        align-content:center;
-        background-color:black;
+    align-content: center;
+    justify-content: center;
+    box-sizing:content-box;
+    flex-wrap:wrap;
+    align-content:center;
+    background-color:black;
+}
+
+tc{
+    display:grid;
+    justify-content: center;
+    text-align: center;
 }
 
 #current{
@@ -132,6 +167,42 @@ div#side{
     color:lime;
 }
 
-@media screen {
+#submit{
+    border-color: crimson;
+    border-style: double;
+    color:gold;
+    background-color: black;
+}
 
+#clear{
+    border-style:solid;
+    border-color:darkgreen;
+    background-color: violet;
+    color:yellow;
+    font-weight: 600;
+}
+
+@media screen and (min-width:769px) and (max-width:1440px) {
+        flex-grow;
+        display:flex;
+        flex-wrap:wrap;
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    align-content: stretch;
+    gap: 5px 5px;
+    justify-content: space-around;
+    display:flex;
+    flex-direction:colomn;
+    flex-wrap: wrap;
+
+
+}
+
+@media screen and (min-width:200px) and (max-width:599px) {
+        border-color:green;
+        display:flex;
+        flex-flow: column-wrap;
 }

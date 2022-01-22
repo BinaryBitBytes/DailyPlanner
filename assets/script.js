@@ -8,8 +8,26 @@ var currentTask =[];
 console.log(currentTask.length);
 var completedTask = [];
 console.log(completedTask.length);
-var highlightDue = (x <= 3);
 
+var TASKS = {
+    name: "name of task",
+    dayCreated: "January Friday 1/21/2022",
+    allTaskS: (passedDueTask[],currentTask[],completedTask[]),
+    isCompleted: false,
+    isPassedDue: false,
+    allTask: function() {
+        console.log("this item is showing as an allTask function");
+    },
+    Completed: function(){
+        console.log("this item is showing as an isCompleted function");
+    },
+    reg1: function() {
+        console.log("this is regerstering TASKS can pring as a function from its local scope");
+    }
+};
+console.log(TASKS.allTask[]);
+TASKS.reg1();
+var highlightDue = (x <= 3);
 var complete = true;
 var pending = false;
 

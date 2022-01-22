@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <meta
-        charset="UTF-8"
-        />
-        <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-        />
-        <link
-        rel="stylesheet"
-        href="./assets/style.css"
-        />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./assets/style.css"/>
     </head>
 
     <body class="" id="">
          <!--My Nav Bar-->
         <nav>
-            <a alt="navigation1 link" href="1">nav1</a>
-            <a alt="navigation2 link" href="2">nav2</a>
-            <a alt="navigation3 link" href="3">nav3</a>
-            <a alt="navigation4 link" href="4">nav3</a>
+            <a alt="navigation1 link" href="1">Week 1</a>
+            <a alt="navigation2 link" href="2">Week 2</a>
+            <a alt="navigation3 link" href="3">Week 3</a>
+            <a alt="navigation4 link" href="4">Week 4</a>
         </nav>
         <!--My Header-->
         <header class="">
@@ -29,20 +21,51 @@
                 This Daily Planner Will Help You Live Your Life
             </p>
         </header>
-        <!--My Body-->
-        <main>
-
-            <!--Sidebar-->
-            <div id=side>
-                <aside>
-                    <h2>This is the active tasks on planner</h2>
+        <!--Sidebar-->
+        <div id=side>
+            <h2>These are the active tasks on planner</h2>
+            <aside>
                     <li id="current">current</li>
                     <li id="passedDue">passed due</li>
                     <li id="completed">completed</li>
-                </aside>
-            </div>
+            </aside>
+        </div>
+        <br>
+        <!--My Body-->
+        <main>
             <div>
-                <form id=''>
+                <div>
+                    <form id='enterDate'><br>
+                        PLEASE ENTER A DATE<br><br>
+                        <label for="createTask">Create Task:</label><br>
+                        <input type="text" id="createTask" name="createTask" value="Create Your Task Here"></input><br><br>
+                        <input type="submit" id="submit" value="submit"><br>
+                        <button id="clear">Clear Entry</button><br>
+
+                    </form>
+                </div>
+                <table alt="" class="" id=""><br>
+                    <th>Month</th><br>
+                    <div>
+                        <tr>
+                        <tc class='week.tr' id="1">week1</tc>
+                        <td>Hello</td>
+                        </tr>
+                        <tr>
+                        <tc class='week.tr' id='2'>week2</tc>
+                        <td>World</td>
+                        </tr>
+                        <tr>
+                        <tc class='week.tr' id='3'>week3</tc>
+                        <td>Meow</td>
+                        </tr>
+                        <tr>
+                        <tc class='week.tr' id='4'>week4</tc>
+                        <td>bark</td>
+                        </tr>  
+                    </div>       
+                </table>
+               <!-- <form id=''>
                     <table alt="" class="" id="">
                         <col>Weeks</col>
                         <th>Month</th>
@@ -55,7 +78,7 @@
                         <tr class='week.tr' id='4'>week4</tr>
                         <td><span>bark</span></td>         
                     </table>
-                </form>
+                </form>-->
             </div>
         </main>
 
