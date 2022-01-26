@@ -1,6 +1,23 @@
-var month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+/*The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+Examples:
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test"*/
+
+const month = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 console.log(month.length);
-var dayOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+const dayOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 console.log(dayOfWeek.length);
 var  passedDueTask = [];
 console.log(passedDueTask.length);
@@ -8,6 +25,9 @@ var currentTask =[];
 console.log(currentTask.length);
 var completedTask = [];
 console.log(completedTask.length);
+var dueDate = ();
+console.log(dueDate);
+
 
 var TASKS = {
     name: "name of task",
@@ -45,6 +65,11 @@ function checkTask() {
         window.alert('These tasks are completed: '+ completedTask[]);
     }
 
+}
+
+const oneDayOverdue = currentTask.filter(passedDue);
+function passedDue( passedDueTask, index, array) {
+    return passedDueTask > dueDate
 }
 
 /*

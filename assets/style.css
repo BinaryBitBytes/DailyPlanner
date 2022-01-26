@@ -108,7 +108,15 @@ table {
     border-color: maroon;
 }
 aside {
-    flex-direction: column;
+    top:0; /*keeps the aside bar at the top of the page*/
+    height:85%;
+    width: 80px;
+    position: fixed;
+    flex-direction: column;/*keeps the aside bar items vertical*/
+    z-index:auto;
+    left:0;
+    overflow-x:hidden;
+    padding-top:5%;
     align-content: center;
     justify-content:stretch;
     box-sizing:content-box;
@@ -201,7 +209,7 @@ tc{
 
 }
 
-@media screen and (min-width:200px) and (max-width:599px) {
+@media screen and (min-width:1px) and (max-width:599px) {
         border-color:green;
         display:flex;
         flex-flow: column-wrap;
